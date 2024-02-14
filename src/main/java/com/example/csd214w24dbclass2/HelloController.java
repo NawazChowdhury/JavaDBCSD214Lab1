@@ -56,6 +56,10 @@ public class HelloController implements Initializable {
                 dbPassword)) {
 // Execute a SQL query to retrieve data from the database
             String query = "SELECT * FROM tbl_user";
+
+
+
+
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
 // Populate the table with data from the database
@@ -69,6 +73,10 @@ public class HelloController implements Initializable {
                         salary,password));
             }
         } catch (SQLException e) {
+
+
+
+            
             e.printStackTrace();
         }
     }
